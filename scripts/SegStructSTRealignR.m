@@ -15,9 +15,10 @@ spm_get_defaults('cmdline',true);%suppresses gui output
 
     
 disp(['Working on Subj ' subjid])
-outDir = ['/home/esievers/projectMatlab/',subjid,'/structural/'];
+outDir = ['/home/esievers/projectMatlab/subjects/',subjid,'/structural/'];
    
 clear matlabbatch
+
 datafilesA = [outDir,subjid,'_mprage_brain_ac.nii,1'];
 datafiles = cellstr(datafilesA);
 disp(['datafile is ' datafiles])
